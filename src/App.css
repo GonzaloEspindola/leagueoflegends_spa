@@ -4,10 +4,10 @@
   padding: 0;
 }
 
-body {
+#root {
   background-image: url('./images/background.png');
   background-size: contain;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* champion__container__header */
@@ -121,4 +121,9 @@ body {
   .filter__container {
     display: none;
   }
+}
+
+/* champ__detail */
+.champ__detail {
+  min-height: 100vh;
 }
