@@ -22,7 +22,6 @@ function Filter ({searchedChampion}) {
                 </div>
             )
         })
-        
     }
 
     return <>

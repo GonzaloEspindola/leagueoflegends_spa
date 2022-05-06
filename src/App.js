@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Champions } from './components/Champions';
+import { Champ } from './components/Champ';
 import { Search } from './components/Search';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes} from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //API
 const api_url = "http://ddragon.leagueoflegends.com/cdn/12.8.1/data";
@@ -10,7 +15,6 @@ const api_url = "http://ddragon.leagueoflegends.com/cdn/12.8.1/data";
 const english = '/en_US';
 const spanish = '/es_ES';
 const allChampions = '/champion.json';
-const uniChampion = '/champion/'; //champion.json
 
 
 function App() {
@@ -29,16 +33,38 @@ function App() {
     })();
   }, [])
 
+  if(champions.length != 0 ) {
+    var idsArray = Object.entries(champions);
+  }
+
 
   return (
-    <React.Fragment>
-      <div className='champion__container__header'>
-        <Search searchValue={searchValue} setSearchValue={setSearchValue}/>
-      </div>
-      <div className='main__container'>
-        <Champions champions={champions} searchValue={searchValue} setSearchValue={setSearchValue}/>
-      </div>
-    </React.Fragment>
+    <Router>
+        <Routes>
+
+          <Route path='/' element={
+            <React.Fragment>
+              <div className='champion__container__header'>
+                <Search searchValue={searchValue} setSearchValue={setSearchValue}/>
+              </div>
+              <div className='main__container'>
+                <Champions champions={champions} searchValue={searchValue} setSearchValue={setSearchValue}/>
+              </div>
+            </React.Fragment>
+          }>
+
+          </Route>
+
+          
+          
+          <Route path="/:id" element={
+            <React.Fragment>
+              <Champ />
+            </React.Fragment>
+          }>
+          </Route>
+        </Routes>
+    </Router>
   );
 }
 

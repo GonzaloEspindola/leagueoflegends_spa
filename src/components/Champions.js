@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Search } from "./Search";
-import {Filter} from './Filter';
+import React from "react";
+import { Filter} from './Filter';
+import { Link } from 'react-router-dom';
 
 function Champions({champions, searchValue, setSearchValue}) {
     //Imagenes
@@ -31,16 +31,19 @@ function Champions({champions, searchValue, setSearchValue}) {
 
         //rendering each champion
         displayChampions = searchedChampion.map(champion => {
+        var id = champion[0];
         let {image, name, tags} = champion[1];
     
         return (
-            <div className="champions__item" key={name}>
-                <img alt={name} src={`${loadingImg_url}${image.full.replace('.png', '_0.jpg')}`} />
-                <div className="champions__item__info"> 
-                    <h2>{name}</h2>
-                    <h4>{`${tags}`.replace(',', ' - ')}</h4>
+            <Link to={`/${id}`} key={id}>
+                <div className="champions__item" >
+                    <img alt={name} src={`${loadingImg_url}${image.full.replace('.png', '_0.jpg')}`} />
+                    <div className="champions__item__info"> 
+                        <h2>{name}</h2>
+                        <h4>{`${tags}`.replace(',', ' - ')}</h4>
+                    </div>
                 </div>
-            </div>
+            </Link>
         )
     })
 
