@@ -35,7 +35,7 @@ function Champions({champions, searchValue, setSearchValue}) {
         let {image, name, tags} = champion[1];
     
         return (
-            <Link to={`/${id}`} key={id}>
+            <Link to={`/leagueoflegends_spa/${id}`} key={id}>
                 <div className="champions__item" >
                     <img alt={name} src={`${loadingImg_url}${image.full.replace('.png', '_0.jpg')}`} />
                     <div className="champions__item__info__filter">
