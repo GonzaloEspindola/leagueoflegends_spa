@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/leagueoflegends_spa/static/css/main.7922d2da.css",
-    "main.js": "/leagueoflegends_spa/static/js/main.f64e9e2f.js",
+    "main.js": "/leagueoflegends_spa/static/js/main.bb3cab4e.js",
     "static/media/background.png": "/leagueoflegends_spa/static/media/background.8670c338c3ecc463d7ea.png",
     "static/media/Fighter.svg": "/leagueoflegends_spa/static/media/Fighter.de3f99ae1933569dde2fade76e960bfe.svg",
     "static/media/Assassin.svg": "/leagueoflegends_spa/static/media/Assassin.46057b242de8156622595bc0b010181d.svg",
@@ -11,10 +11,10 @@
     "static/media/Tank.svg": "/leagueoflegends_spa/static/media/Tank.f6876a1e356eca7e1fd1d330c82319ff.svg",
     "index.html": "/leagueoflegends_spa/index.html",
     "main.7922d2da.css.map": "/leagueoflegends_spa/static/css/main.7922d2da.css.map",
-    "main.f64e9e2f.js.map": "/leagueoflegends_spa/static/js/main.f64e9e2f.js.map"
+    "main.bb3cab4e.js.map": "/leagueoflegends_spa/static/js/main.bb3cab4e.js.map"
   },
   "entrypoints": [
     "static/css/main.7922d2da.css",
-    "static/js/main.f64e9e2f.js"
+    "static/js/main.bb3cab4e.js"
   ]
 }
