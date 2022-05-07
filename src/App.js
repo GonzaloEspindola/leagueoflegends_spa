@@ -52,12 +52,11 @@ function App() {
               </div>
             </React.Fragment>
           }>
-
           </Route>
 
           
           
-          <Route path="/:id" element={
+          <Route path="/:id/*" element={
             <React.Fragment>
               <Champ />
             </React.Fragment>
