@@ -38,6 +38,9 @@ function Champions({champions, searchValue, setSearchValue}) {
             <Link to={`/${id}`} key={id}>
                 <div className="champions__item" >
                     <img alt={name} src={`${loadingImg_url}${image.full.replace('.png', '_0.jpg')}`} />
+                    <div className="champions__item__info__filter">
+
+                    </div>
                     <div className="champions__item__info"> 
                         <h2>{name}</h2>
                         <h4>{`${tags}`.replace(',', ' - ')}</h4>
