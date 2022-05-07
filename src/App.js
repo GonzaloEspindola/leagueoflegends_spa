@@ -42,7 +42,7 @@ function App() {
     <Router>
         <Routes>
 
-          <Route path='/' element={
+          <Route path='/leagueoflegends_spa/' element={
             <React.Fragment>
               <div className='champion__container__header'>
                 <Search searchValue={searchValue} setSearchValue={setSearchValue}/>
@@ -56,7 +56,7 @@ function App() {
 
           
           
-          <Route path="/:id/*" element={
+          <Route path="/leagueoflegends_spa/:id/*" element={
             <React.Fragment>
               <Champ />
             </React.Fragment>
