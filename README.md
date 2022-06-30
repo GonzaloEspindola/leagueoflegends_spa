@@ -18,7 +18,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
 
-![](https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=https://gonzaloespindola.github.io/leagueoflegends_spa/&color=)
+![](https://i.ibb.co/Y8r4xqv/screenshot-1.png)
 
 Single Web Page consumiendo la API oficial del juego League Of Legends
 
