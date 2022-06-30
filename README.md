@@ -41,7 +41,7 @@ Puedes utilizar el proyecto y sentirte libre de cambiar lo que quieras.
 
 1. Clona el repositorio
    ```sh
-    git clone https://github.com/GonzaloEspindola/portfolio.git
+    git clone https://github.com/GonzaloEspindola/laegueoflegends_spa
     ```
 2. Instala las dependencias
    ```sh
